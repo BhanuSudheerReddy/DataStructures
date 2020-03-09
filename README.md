@@ -1,2 +1,0 @@
-# DataStructures
-DataStructures basic code
