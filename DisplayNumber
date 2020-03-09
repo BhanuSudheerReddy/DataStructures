@@ -1,0 +1,12 @@
+class GfG
+{
+    void printList(Node head)
+    {
+        Node n=head;
+        while(n!=null)
+        {
+            System.out.print(n.data+" ");
+            n=n.next;
+        }
+    }
+}
