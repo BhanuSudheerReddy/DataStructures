@@ -1,0 +1,27 @@
+class Rotate {
+    
+    
+    public Node rotate(Node head, int k) {
+       
+        Node n=head;
+        ArrayList<Integer> a=new ArrayList<Integer>();
+        int count=0;
+        while(n!=null)
+        {
+            count++;
+            a.add(n.data);
+            n=n.next;
+        }
+        int rem=k%count;
+        Node temp=head;
+        int i=0;
+        while(temp!=null)
+        {
+            temp.data=a.get((rem+i)%count);
+            i++;
+            temp=temp.next;
+            
+        }
+        return head;
+    }
+}
